@@ -26,7 +26,7 @@ def api_response(status, data=None, error=None, code=None):
 
 @api_view(['POST'])
 def create(request):
-    print("Request: {}".format(request.data))
+   # print("Request: {}".format(request.data))
     # logger.info('[{}] Request - {} API with data {}'.format(request.method, request.path, request.data))
     try:
         name = request.data.get('name')
